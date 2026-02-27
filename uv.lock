@@ -1257,21 +1257,6 @@ wheels = [
 ]
 
 [[package]]
-name = "strands"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "strands-agents", extra = ["ollama"] },
-    { name = "strands-agents-tools" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "strands-agents", extras = ["ollama"], specifier = ">=1.28.0" },
-    { name = "strands-agents-tools", specifier = ">=0.2.21" },
-]
-
-[[package]]
 name = "strands-agents"
 version = "1.28.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1324,6 +1309,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/61/63/7cc5cdce4c04c6b5c0f8b595f514937f15252ef29f22d5e09a9483627282/strands_agents_tools-0.2.21.tar.gz", hash = "sha256:d48d7ceb1e058319467db9a1d9eaa4003f8681e5af028d5f6cd1b2b3d1678ce8", size = 474115, upload-time = "2026-02-19T17:42:19.185Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/21/ad/0250fec20fb445b60c750f90009b7e5d81999ed58e41f455c842a0a43a74/strands_agents_tools-0.2.21-py3-none-any.whl", hash = "sha256:7e925b66d21cbf1626f7c58db9b200c6530f82f366d67b1525cad30aca5af967", size = 312775, upload-time = "2026-02-19T17:42:17.549Z" },
+]
+
+[[package]]
+name = "strands-sandbox"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "strands-agents", extra = ["ollama"] },
+    { name = "strands-agents-tools" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "strands-agents", extras = ["ollama"], specifier = ">=1.28.0" },
+    { name = "strands-agents-tools", specifier = ">=0.2.21" },
 ]
 
 [[package]]

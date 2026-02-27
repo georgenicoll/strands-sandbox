@@ -5,7 +5,14 @@
 from strands import Agent
 from strands.models.ollama import OllamaModel
 
-# create the agent
-agent = Agent()
+# ollama model instance
+ollama_model = OllamaModel(
+    host="http://localhost:11434",
+    model_id="tinyllama",
+)
 
-agent("Tell me about agentic AI")
+# create the agent
+agent = Agent(model=ollama_model)
+
+# Use the agent
+agent("When were you trained")
