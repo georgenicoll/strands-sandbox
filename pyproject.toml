@@ -9,8 +9,8 @@ description = "Playing around with strands"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "strands-agents[ollama]>=1.28.0",
-    "strands-agents-tools>=0.2.21",
+    "strands-agents[ollama]>=1.35.0",
+    "strands-agents-tools>=0.4.1",
 ]
 
 [project.scripts]

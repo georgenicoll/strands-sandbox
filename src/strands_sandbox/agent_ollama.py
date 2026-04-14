@@ -1,14 +1,17 @@
 # This requires ollama to be running.
-# Install the llama3.1 model:  ollama pull llama3.1
+# Install the model:  ollama pull <model>
+# For a list of models:
 # Start the ollama server:  ollama serve
 
 from strands import Agent
 from strands.models.ollama import OllamaModel
 
+model_id = "tinyllama"
+
 # ollama model instance
 ollama_model = OllamaModel(
     host="http://localhost:11434",
-    model_id="tinyllama",
+    model_id=model_id,
 )
 
 # create the agent
